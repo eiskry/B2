@@ -1,26 +1,23 @@
 import java.io.*;
 
-public class Binary {
-     public static void main(String[] args) {
-	 public static void printBinary(int n) {
-	     string s=reader.readLine();
-	     s = "";
-	     while (n > 0)
-		 {
-		     s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
-		     n = n / 2;
-		 }
-	     return s;
+public class Binary {    
+	 public static int  printBinary(int n) {
+	     if (n==0) {
+		 return 0;
+	     } else {
+		 return printBinary(n/2)*10+n%2;
+	     }
 	 }
-	 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-	 try {
-	     String line = reader.readLine();
-	     int a = Integer.parseInt(line);
-	     printBinary(a);
+    public static void main(String[] args) {
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+	try {
+	    String line = reader.readLine();
+	    int a = Integer.parseInt(line);
+	    System.out.println(printBinary(a));
 	 } catch (IOException e) {
 	     System.out.println(e);
 	 } catch (NumberFormatException e) {
-	     System.out.println("æåのååがæしくありません．");
+	     System.out.println("数字の形式が正しくありません．");
 	 }
      }
 }

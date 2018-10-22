@@ -16,11 +16,11 @@ import java.io.*;
 		String line;
 		line = reader.readLine();
 		int a = Integer.parseInt(line);
-		System.out.println(a+" "+fib(a)+" ");
+		System.out.println(a+"番目のフィボナッチ数は "+fib(a)+"です． ");
 	} catch (IOException e) {
             System.out.println(e);
         } catch (NumberFormatException e) {
-            System.out.println("æåのååがæしくありません．");
+            System.out.println("数字の形式が正しくありません．");
         }
     }
 }
