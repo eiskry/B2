@@ -1,0 +1,25 @@
+public class Sqare {
+    public static void main(Syting[] args) {
+	int a,b,c,d,e,f,g,h,i,j,k,l;
+        a = 1;
+	b = Sq(a);
+        c = 3;
+	d = Sq(c);
+        e = 5;
+	f = Sq(e);
+        g = 7;
+	h = Sq(g);
+        i = 9;
+	j = Sq(i);
+        k = 11;
+        l = Sq(k);
+	System.out.println(a+" "+b);
+	System.out.println(c+" "+d);
+	System.out.println(e+" "+f);
+	System.out.println(g+" "+h);
+	System.out.println(i+" "+j);
+	System.out.println(k+" "+l);
+    public static int sq(int n) {
+	return n*n;
+    }
+}

@@ -1,0 +1,32 @@
+import java.io.*;
+
+public class Binary {
+     public static void main(String[] args) {
+	 public static void printBinary(int n) {
+	     string s=reader.readLine();
+	     s = "";
+	     while (n > 0)
+		 {
+		     s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
+		     n = n / 2;
+		 }
+	     return s;
+	 }
+	 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+	 try {
+	     String line = reader.readLine();
+	     int a = Integer.parseInt(line);
+	     printBinary(a);
+	 } catch (IOException e) {
+	     System.out.println(e);
+	 } catch (NumberFormatException e) {
+	     System.out.println("æåのååがæしくありません．");
+	 }
+     }
+}
+	    
+
+    
+
+	
+       
